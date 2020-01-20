@@ -1,6 +1,6 @@
 ﻿var active_class = 'selected';
 var eventsSelected = [];
-var baseUrl = 'http://localhost/betminer';
+var baseUrl = 'https://raw.githubusercontent.com/emirakpala/mackolik/master';
 
 var mackolikCustom = {
     jsonData: [],

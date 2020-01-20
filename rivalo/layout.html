@@ -1,0 +1,137 @@
+<div id="countryList" style="position:absolute;left:15px;background-color:#f6f6f6;padding:10px;">
+    <div class="nav-search" id="nav-search">
+        <div class="form-search">
+            <span class="input-icon">
+                <input type="text" placeholder="Ara ..." class="nav-search-input" id="search-tournament" autocomplete="off" />
+            </span>
+        </div>
+    </div>
+    <div class="control-group" id="tournamentList">
+        <label class="control-label bolder blue">Checkbox</label>
+        <div class="checkbox">
+            <label>
+                <input name="form-field-checkbox" type="checkbox" class="ace" />
+                <span class="lbl">choice 1</span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input name="form-field-checkbox" type="checkbox" class="ace" />
+                <span class="lbl">choice 2</span>
+            </label>
+        </div>
+    </div>
+</div>
+<div id="mainContainer">
+    <div id="header"></div>
+    <div id="content" class="content">
+        <div class="dataContainer">
+            <input type="hidden" id="emiro" value="10" />
+            <div class="navContainer">
+                <div style="float: left;">
+                    <select name="ddlDaysCount" id="ddlDaysCount">
+                        <option selected="selected" value="0">Bugün</option>
+                        <option value="1">+1</option>
+                        <option value="2">+2</option>
+                        <option value="3">+3</option>
+                        <option value="4">+4</option>
+                        <option value="5">+5</option>
+                        <option value="6">+6</option>
+                        <option value="7">+7</option>
+                    </select>
+                    İddaa
+                    <input type="checkbox" id="chkIddaa" />
+                </div>
+                <div class="nav-search nav-search-right" id="nav-search">
+                    <div class="form-search">
+                        <span class="input-icon">
+                            <input type="text" placeholder="Ara ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                        </span>
+                    </div>
+                </div>
+                <div style="float: right;">
+                    <input type="button" id="btnCreateCoupon" value="Grap Events" style="height: 24px; margin-right: 5px;" />
+                </div>
+            </div>
+            <div id="tableContainer" class="tableContainer"></div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</div>
+<div id="dialog-message" title="Kuponlar" style="position:absolute; right:25px; width:255px; display:none;">
+    <table>
+        <tr>
+            <td>Seçilen Maç</td>
+            <td>
+                <span id="selectedEventCount"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Maç Sayısı</td>
+            <td>
+                <select id="ddlMatchCount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected="selected">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Kupon Sayısı</td>
+            <td>
+                <select id="ddlCouponCount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected="selected">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <input type="button" id="btnCreate" value="Oluşur" />
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <div id="dialogContainer"></div>
+    <br/>
+    <br/>
+    <input type="button" id="btnClose" value="Kapat" />
+</div>
